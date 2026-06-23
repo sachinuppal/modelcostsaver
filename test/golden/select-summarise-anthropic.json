@@ -1,0 +1,15 @@
+{
+  "description": "A summarise task constrained to anthropic. summarise routes to the fast tier; among anthropic fast-tier models haiku is the only (and cheapest) one.",
+  "input": {
+    "taskClass": "summarise",
+    "preferredProvider": "anthropic",
+    "estimatedInputTokens": 5000,
+    "estimatedOutputTokens": 800
+  },
+  "expected": {
+    "selectedModel": "claude-haiku-4-5-20251001",
+    "selectedProvider": "anthropic",
+    "selectedTier": "fast",
+    "budgetExceeded": false
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "description": "A trivial classify task that requires tools must degrade UP. No trivial-tier model has tools, so the cheapest tools-capable model at the next tier wins. gemini-2.5-flash ($0.30/1M in) is cheaper than gpt-4.1-mini ($0.40/1M in) and haiku ($1.00/1M in) at this input-heavy 800/50 shape.",
+  "input": {
+    "taskClass": "classify_route",
+    "requiredCapabilities": ["tools"],
+    "estimatedInputTokens": 800,
+    "estimatedOutputTokens": 50,
+    "maxCostUsd": 0.01
+  },
+  "expected": {
+    "selectedModel": "gemini-2.5-flash",
+    "selectedProvider": "gemini",
+    "selectedTier": "fast",
+    "budgetExceeded": false
+  }
+}

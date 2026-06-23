@@ -1,0 +1,182 @@
+{
+  "catalogVersion": "2026-06-23.2",
+  "asOf": "2026-06-23",
+  "source": "provider public pricing pages",
+  "models": [
+    {
+      "id": "local-fast",
+      "alias": "local-fast",
+      "provider": "local",
+      "tier": "fast",
+      "capabilities": [
+        "chat",
+        "streaming",
+        "tools"
+      ],
+      "inputPerMillion": 0,
+      "outputPerMillion": 0,
+      "source": "self-hosted (no public price)"
+    },
+    {
+      "id": "local-standard",
+      "alias": "local",
+      "provider": "local",
+      "tier": "standard",
+      "capabilities": [
+        "chat",
+        "streaming",
+        "tools"
+      ],
+      "inputPerMillion": 0,
+      "outputPerMillion": 0,
+      "source": "self-hosted (no public price)"
+    },
+    {
+      "id": "gemini-2.5-flash-lite",
+      "alias": "gemini-flash-lite",
+      "provider": "gemini",
+      "tier": "trivial",
+      "capabilities": [
+        "chat",
+        "streaming"
+      ],
+      "inputPerMillion": 0.1,
+      "outputPerMillion": 0.4,
+      "outputCap": 100,
+      "source": "https://ai.google.dev/gemini-api/docs/pricing"
+    },
+    {
+      "id": "gemini-2.5-flash",
+      "alias": "gemini-flash",
+      "provider": "gemini",
+      "tier": "fast",
+      "capabilities": [
+        "chat",
+        "streaming",
+        "tools",
+        "vision"
+      ],
+      "inputPerMillion": 0.3,
+      "outputPerMillion": 2.5,
+      "source": "https://ai.google.dev/gemini-api/docs/pricing"
+    },
+    {
+      "id": "gpt-4.1-mini",
+      "alias": "gpt-mini",
+      "provider": "openai",
+      "tier": "fast",
+      "capabilities": [
+        "chat",
+        "streaming",
+        "tools",
+        "vision"
+      ],
+      "inputPerMillion": 0.4,
+      "outputPerMillion": 1.6,
+      "source": "https://openai.com/api/pricing"
+    },
+    {
+      "id": "claude-haiku-4-5-20251001",
+      "alias": "haiku",
+      "provider": "anthropic",
+      "tier": "fast",
+      "capabilities": [
+        "chat",
+        "streaming",
+        "tools"
+      ],
+      "inputPerMillion": 1,
+      "outputPerMillion": 5,
+      "source": "https://www.anthropic.com/pricing"
+    },
+    {
+      "id": "gemini-2.5-pro",
+      "alias": "gemini-pro",
+      "provider": "gemini",
+      "tier": "standard",
+      "capabilities": [
+        "chat",
+        "streaming",
+        "tools",
+        "vision"
+      ],
+      "inputPerMillion": 1.25,
+      "outputPerMillion": 10,
+      "source": "https://ai.google.dev/gemini-api/docs/pricing"
+    },
+    {
+      "id": "gpt-4.1",
+      "alias": "gpt",
+      "provider": "openai",
+      "tier": "standard",
+      "capabilities": [
+        "chat",
+        "streaming",
+        "tools",
+        "vision"
+      ],
+      "inputPerMillion": 2,
+      "outputPerMillion": 8,
+      "source": "https://openai.com/api/pricing"
+    },
+    {
+      "id": "o3",
+      "alias": "o3",
+      "provider": "openai",
+      "tier": "reasoning",
+      "capabilities": [
+        "chat",
+        "streaming",
+        "tools"
+      ],
+      "inputPerMillion": 2,
+      "outputPerMillion": 8,
+      "source": "https://openai.com/api/pricing"
+    },
+    {
+      "id": "claude-sonnet-4-6",
+      "alias": "sonnet",
+      "provider": "anthropic",
+      "tier": "standard",
+      "capabilities": [
+        "chat",
+        "streaming",
+        "tools",
+        "vision"
+      ],
+      "inputPerMillion": 3,
+      "outputPerMillion": 15,
+      "source": "https://www.anthropic.com/pricing"
+    },
+    {
+      "id": "claude-opus-4-7",
+      "alias": "opus-4-7",
+      "provider": "anthropic",
+      "tier": "reasoning",
+      "capabilities": [
+        "chat",
+        "streaming",
+        "tools",
+        "vision"
+      ],
+      "inputPerMillion": 5,
+      "outputPerMillion": 25,
+      "source": "https://www.anthropic.com/pricing"
+    },
+    {
+      "id": "claude-opus-4-8",
+      "alias": "opus",
+      "provider": "anthropic",
+      "tier": "reasoning",
+      "capabilities": [
+        "chat",
+        "streaming",
+        "tools",
+        "vision"
+      ],
+      "inputPerMillion": 5,
+      "outputPerMillion": 25,
+      "source": "https://www.anthropic.com/pricing"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "name": "@workswarm/modelcostsaver",
+  "version": "0.1.1",
+  "mcpName": "io.github.sachinuppal/modelcostsaver",
+  "description": "Predict LLM call cost and pick the cheapest capable model, offline, from your editor.",
+  "type": "module",
+  "license": "Apache-2.0",
+  "bin": {
+    "modelcostsaver": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "catalog.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsx watch src/index.ts",
+    "test": "vitest run",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "smoke": "node scripts/smoke.mjs",
+    "prepublishOnly": "tsup && node scripts/verify-publishable.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.43",
+    "tsup": "^8.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.4.0",
+    "vitest": "^1.6.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sachinuppal/modelcostsaver.git"
+  },
+  "homepage": "https://github.com/sachinuppal/modelcostsaver#readme",
+  "bugs": {
+    "url": "https://github.com/sachinuppal/modelcostsaver/issues"
+  }
+}
